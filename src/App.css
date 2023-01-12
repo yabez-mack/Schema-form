@@ -1,5 +1,3 @@
-
-
 * {
   box-sizing: border-box;
 }
@@ -143,6 +141,21 @@ select {
   color: #8d8b92;
 }
 
+.btn-new {
+  background-color: #f3f1f100;
+  border: #f3f1f1 solid;
+  color: #f3f1f1;
+
+}
+
+.btn-new:hover {
+  background-color: #f3f1f100;
+  border: #f3f1f1a0 solid;
+  color: #f3f1f193;
+
+
+}
+
 @media screen and (min-width:765px) {
   .pop_content {
     background-color: white;
@@ -154,27 +167,29 @@ select {
     border-radius: 5px;
     border: 2px solid black;
     height: 93vh;
+
   }
-  
+
   .form_buttons {
     display: flex;
     flex-direction: row;
-  
+
     position: absolute;
     left: 0;
     right: 0;
     margin: auto;
     width: 40%;
     bottom: 22px;
-    
-   
-    text-align: center;
-    
-  }
-  .but {
-    margin:auto;
 
-  
+
+    text-align: center;
+
+  }
+
+  .but {
+    margin: auto;
+    width: 100px;
+
   }
 
 }
@@ -183,20 +198,22 @@ select {
   .form_buttons {
     display: flex;
     flex-direction: column;
-  
+
     position: absolute;
     left: 0;
     right: 0;
     margin: auto;
     width: 50%;
     bottom: 22px;
-   
+
     text-align: center;
   }
+
   .but {
     margin-top: 22px;
-  
+
   }
+
   .pop_content {
     background-color: white;
     position: absolute;

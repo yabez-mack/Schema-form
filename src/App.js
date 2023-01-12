@@ -16,7 +16,7 @@ export default function App() {
   return (
     <div>
       <div className='btn-pack'>
-        <button className='btn btn-light' onClick={togglePop}>Click</button>
+        <button className='btn btn-new' onClick={togglePop}>Save Segment</button>
       </div>
       {pop ? <Popup toggle={togglePop} /> : null}
     </div>
