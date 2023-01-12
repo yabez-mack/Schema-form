@@ -74,35 +74,6 @@ button:hover {
 }
 
 
-.btn-pack:before {
-  content: "";
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: linear-gradient(3deg, #60efff 29%, #0061ff 89%);
-  transform: translate3d(-12px, 4px, 0) scale(0.95);
-  filter: blur(33px);
-  opacity: var(0.96);
-  transition: opacity 0.3s;
-  border-radius: inherit;
-}
-
-
-.btn-pack::after {
-  content: "";
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: inherit;
-  border-radius: inherit;
-
-}
 
 select {
   width: 90%;
@@ -142,15 +113,16 @@ select {
 }
 
 .btn-new {
+  
   background-color: #f3f1f100;
-  border: #f3f1f1 solid;
+  border: #f3f1f1 3px solid;
   color: #f3f1f1;
 
 }
 
 .btn-new:hover {
   background-color: #f3f1f100;
-  border: #f3f1f1a0 solid;
+  border: #f3f1f1a0 3px solid;
   color: #f3f1f193;
 
 
