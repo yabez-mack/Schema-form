@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+
+import React, { useState } from 'react'
+
+import Popup from "./Popup";
+import './App.css'
+
+export default function App() {
+  const [pop, setPop] = useState(false)
+
+  const togglePop = () => {
+    // alert('hello')
+    setPop(!pop)
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className='btn-pack'>
+        <button className='btn btn-light' onClick={togglePop}>Click</button>
+      </div>
+      {pop ? <Popup toggle={togglePop} /> : null}
     </div>
-  );
+  )
 }
-
-export default App;
